@@ -1,0 +1,2 @@
+class Urllink < ApplicationRecord
+end
