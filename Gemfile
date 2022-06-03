@@ -44,6 +44,8 @@ gem "bootsnap", require: false
 
 gem 'rspec-rails', '~> 5.0.0'
 
+gem 'rails-controller-testing'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
