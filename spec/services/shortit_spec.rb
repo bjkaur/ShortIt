@@ -35,7 +35,7 @@ RSpec.describe Shortit do
         expect(short_url).to be_valid
 
         short_url2 = shortit.generate_short_link
-        expect(short_url2).to be_valid
+        expect(short_url2).to be_valid 
     end
 
 end
