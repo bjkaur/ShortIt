@@ -53,7 +53,7 @@ class Shortit
     private
 
     def get_seven_char_code(i)
-        Digest::SHA256.hexdigest(original_url.to_s)[i..(i + 6)]
+        Digest::SHA256.hexdigest(original_url.to_s)[i..(i + 6)] 
     end 
 
 end
