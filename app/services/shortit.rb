@@ -26,11 +26,9 @@ class Shortit
         # checks if the code exists already 
         # otherwise get another seven character code
         # break out of the loop if seven character code does NOT exist in the database
-        i = 0
         loop do
-            seven_char_code = get_seven_char_code(i)
+            seven_char_code = get_seven_char_code
             break seven_char_code unless url_link_model.exists?(seven_char_string: seven_char_code)
-            i = i + 1
         end
 
         #"1234567"
@@ -52,8 +50,11 @@ class Shortit
     # not being accessed other than its own class
     private
 
-    def get_seven_char_code(i)
-        Digest::SHA256.hexdigest(original_url.to_s)[i..(i + 6)] 
+    def get_seven_char_code
+        #Digest::SHA256.hexdigest(original_url.to_s)[i..(i + 6)] 
+        
+        # Returns random user id
+        SecureRandom.uuid[0..6]
     end 
 
 end
