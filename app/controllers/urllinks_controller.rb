@@ -4,7 +4,7 @@ class UrllinksController < ApplicationController
     # by rendering JS template back to the server
     def create
         shortit = Shortit.new(urllink_params[:original_url])
-        @shortit = shortit.generate_short_link
+        @urllink = shortit.generate_short_link
 
         respond_to do |format|
           format.html 
