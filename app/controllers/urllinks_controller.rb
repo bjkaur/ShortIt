@@ -5,6 +5,11 @@ class UrllinksController < ApplicationController
     def create
         shortit = Shortit.new(urllink_params[:original_url])
         @shortit = shortit.generate_short_link
+
+        respond_to do |format|
+          format.html 
+          format.js #{ render :create }
+        end
     end 
 
     private
