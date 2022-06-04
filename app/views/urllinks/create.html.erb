@@ -1,6 +1,3 @@
-
-<% #alert("Hello ,AJAX!"); %>
-
-var @code = "<%= @urllink.seven_char_code %>";
-console.log(seven_char_code);
-
+<% #byebug %>
+Short Link is: <%= @_assigns["urllink"].seven_char_string %>
+<% #console.log(seven_char_code); %>
