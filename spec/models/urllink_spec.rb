@@ -51,5 +51,17 @@ RSpec.describe Urllink, type: :model do
     expect(url_link2.valid?).to be(false)
   end 
 
+    # Test 5 (opposite of the first test)
+    it "it is INVALID if it URL is NOT formatted suitabily" do 
+      url_link = Urllink.new(
+          original_url: "iusdhfisdhf9884u593jkdfj",
+          seven_char_string: "4567890"
+      )
+      
+      # Checks link is valid (does not have any problems and return true
+      expect(url_link.valid?).to be(false)
+    end
+  
+
 
 end
