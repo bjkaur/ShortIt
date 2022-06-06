@@ -48,6 +48,8 @@ gem 'rails-controller-testing'
 
 gem 'responders'
 
+gem 'byebug'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
