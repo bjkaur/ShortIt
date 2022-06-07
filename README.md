@@ -10,4 +10,5 @@ To start the app from Terminal.
 * Project is done using Test Driven Development Approach using RSpec
 * Test files in spec folder
 * To run tests -> Go to Terminal -> Type rspec
-* Follwed MVC Structure
+* Followed MVC Structure
+* Written using Ruby on Rails 7 framework
