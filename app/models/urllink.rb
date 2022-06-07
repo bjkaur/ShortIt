@@ -15,4 +15,8 @@ class Urllink < ApplicationRecord
             errors.add(:original_url, "Invalid URL format")
         end
     end
+
+    def shortened_url
+        "http://localhost:3000/#{seven_char_string}"
+    end
 end

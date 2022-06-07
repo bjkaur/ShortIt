@@ -14,6 +14,7 @@ class UrllinksController < ApplicationController
 
     end 
 
+    # Shows errors if URL is not in valid format
     def error
     end
     
