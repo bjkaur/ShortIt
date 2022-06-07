@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To start the app from Terminal. 
+* Go to Terminal
+* cd ShortIt
+* Type rails s to start the Terminal
+* Go to browser
+* Go to https://www.localhost:3000/home/index
+* To stop the server, press Ctrl+C
+* Project is done using Test Driven Development Approach using RSpec
+* Test files in spec folder
+* To run tests -> Go to Terminal -> Type rspec
+* Follwed MVC Structure
