@@ -10,8 +10,13 @@ class UrllinksController < ApplicationController
           format.html 
           format.js #{ render :create }
         end
+
+
     end 
 
+    def error
+    end
+    
     private
     def urllink_params
         params.require(:urllink).permit(:original_url)
