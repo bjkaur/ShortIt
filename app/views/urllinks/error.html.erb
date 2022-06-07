@@ -1,0 +1,10 @@
+<body onload="message()">
+    <%= @msg = @urllink.errors.full_messages.join(", ") << '.' %>
+</body>
+
+<script>
+    function message(){
+        element = document.getElementById('short-link-errors');
+        element.innerHTML = @msg
+    } 
+</script>
