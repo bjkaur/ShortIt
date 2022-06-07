@@ -1,3 +1,13 @@
 <% #byebug %>
-Short Link is: <%= @_assigns["urllink"].seven_char_string %>
+<body onload="shortlink()">
+    Short Link is: <%= @urllink.shortened_url%> <%# @_assigns["urllink"].seven_char_string %>
+</body>
+
+<script>
+    function shortlink(){
+        element = document.getElementById('short-link-errors');
+        element.innerHTML = urllink.shortened_url
+    } 
+</script>
+
 <% #console.log(seven_char_code); %>
